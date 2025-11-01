@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Alunos</title>
+</head>
+<body>
+  <h1>Lista de alunos</h1>
+  <ul id="students"></ul>
+
+  <script>
+    fetch("http://localhost:8080/students")
+      .then(res => res.json())
+      .then(data => {
+        const list = document.getElementById("students");
+        data.forEach(s => {
+          const li = document.createElement("li");
+          li.textContent = `${s.id} - ${s.nome} (${s.email})`;
+          list.appendChild(li);
+        });
+      })
+      .catch(err => console.error(err));
+  </script>
+</body>
+</html>
