@@ -6,9 +6,9 @@ import lombok.Setter;
 @Setter
 @Getter
 public class Student {
-
-    private int studentid;
-    private String studentname;
-    private String studentcpf;
+    // Getters e Setters
+    private int id;
+    private String nome;
+    private int idade;
 
 }
