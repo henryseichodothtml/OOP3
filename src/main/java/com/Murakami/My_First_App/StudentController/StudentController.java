@@ -10,7 +10,7 @@ import java.util.List;
 
 @RestController
 @RequestMapping("/students")
-@CrossOrigin(origins = "*") // permite que o front (em outra porta) acesse
+@CrossOrigin(origins = "*")
 public class StudentController {
 
     @Autowired

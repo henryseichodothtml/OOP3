@@ -1,5 +1,6 @@
 package com.Murakami.My_First_App;
 
+import com.Murakami.My_First_App.StudentDAO.StudentDAO;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

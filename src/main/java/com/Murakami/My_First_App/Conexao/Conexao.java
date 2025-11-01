@@ -6,7 +6,7 @@ import java.sql.SQLException;
 
 public class Conexao {
     public Connection getConexao() {
-        String url = "jdbc:mysql://127.0.0.1:3306/javadatabase?useSSL=false&serverTimezone=UTC";
+        String url = "jdbc:mysql://127.0.0.1:3306/javadatabase?useSSL=false&allowPublicKeyRetrieval=true&serverTimezone=UTC";
         String user = "javauser";
         String password = "senha123";
 
